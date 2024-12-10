@@ -73,8 +73,17 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+  ],
 };
 
 export default config;
